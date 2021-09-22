@@ -58,6 +58,12 @@ public class Circle extends GraphicObject {
 	/**
 	 * @return the Circle with this EXACT format Circle: centerX = ... centerY = ... radius = ...
 	 */
+
+	public String getCircle(Circle circle) {
+		System.out.println("Circle : centerX = " circle.centerX + " centerY = " + circle.centerY + " radius = "
+		+ circle.radius + " .")''
+	}
+
 	@Override
 	public String toString() {
 		return super.toString();
@@ -69,18 +75,23 @@ public class Circle extends GraphicObject {
 	 * @return true if this and obj have the same values for
 	 * centerX, centerY and radius
 	 */
+
 	@Override
 	public boolean equals(Object obj) {
-		return super.equals(obj);
+		if (this.centerX == centerX && this.centerY == centerY
+				&& this.radius == radius) {
+			return super.equals(obj);
+		}
 	}
 
 	// TODO To complete
 	/**
 	 * @return an exact copy of the Circle that is a new instance 
 	 */
-	// @Override
-	// protected Object clone() throws CloneNotSupportedException {
-	// return super.clone();
-	// }
+
+	 @Override
+	 protected Object clone() throws CloneNotSupportedException {
+	 	return new Circle();
+	 }
 
 }
