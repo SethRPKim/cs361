@@ -134,7 +134,10 @@ public class Location implements Cloneable
    * @return
    *   the x coordinate of this Location.
    **/ 
-   public double getX( )
+   /**
+ * @return
+ */
+public double getX( )
    {
       return x;
    }

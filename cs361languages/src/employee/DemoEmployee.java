@@ -4,7 +4,7 @@
 package employee;
 
 /**
- * @author ADD YOUR NAME
+ * @author Seth K. and Sam V.
  *
  */
 
@@ -33,24 +33,34 @@ public class DemoEmployee {
 		emp3.whoAmI();
 		// TODO To complete
 		// emp3.whoAmI() // prints ... because ...
+		//**Answer: emp3.whoAmI() prints "PART TIME EMPLOYEE" because it casts from the Employee
+		// class which is then overwritten by the child class PartTimeEmployee when emp3 = pEmp1, and
+		// within that class is the whoAmI method which prints "PART TIME EMPLOYEE" when called.
+
 		// emp3.getHourlyRate(); // returns syntax error because ...
+		//**Answer: emp3.getHourlyRate(); returns a syntax error because emp3 was instantiated as an
+		// Employee type, which does not have a getHourlyRate method nor is a method that takes
+		// a 4th set of values when instantiated like the PartTimeEmployee class.
+		
 
 		// TODO To complete
 		// Add the condition that test that emp3 is an instance of part time employee at
 		// this time
-		// if (CONDITION) {
-		// System.out.println("emp3 instance of part time employee"); // printed
-		// } else {
-		System.out.println("emp3 not instance of part time employee");
-		// }
+		if (emp3 instanceof PartTimeEmployee) {
+			System.out.println("emp3 instance of part time employee"); // printed
+		} else {
+			System.out.println("emp3 not instance of part time employee");
+		}
 
 		// Downcasting 1
 		// TODO Uncomment and run the code
-		// PartTimeEmployee pEmp3 = (PartTimeEmployee) emp1;
+		//PartTimeEmployee pEmp3 = (PartTimeEmployee) emp1;
 		// TODO To complete
 		// This instruction compiles / does not compile
 		// This instruction returns a ClassCastException at run time
 		// because ...
+		//**Answer: This instruction does not compile and returns a ClassCastException at run time
+		//  because the Employee class is not a subclass of the PartTimeEmployee class thus will not allow casting.
 
 		// Downcasting 2
 		// Requires the use of intanceof to avoid a run time cast exception

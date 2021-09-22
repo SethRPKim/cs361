@@ -4,10 +4,9 @@
 package mystack;
 
 /**
- * @author ADD YOUR NAME 
+ * @author Seth K. and Sam V.
  *
  */
-
 // Stack using generics
 
 // Complete the provided code
@@ -34,11 +33,14 @@ public class MyStack<T> {
 
 	public T pop() {
 		// TODO To complete
-		return null;
+		T popOut = theStack.val;
+		theStack = theStack.next;
+		return popOut;
 	}
 
 	public void push(T v) {
 		// TODO To complete
+		theStack = new MyNode<T>(v,theStack);
 	}
 
 	
@@ -51,11 +53,19 @@ public class MyStack<T> {
 		// Push 1 and 2
 		// Pop
 		// Push 5
+		MyStack<Integer> integer = new MyStack<Integer>();
+		integer.push(1);
+		integer.push(2);
+		integer.pop();
+		integer.push(5);
 		
 		// TODO To complete
 		// Create a stack of Person
 		// Push a person p1 with your name
 		// Push a person p2 with my name
+		MyStack<String> Person = new MyStack<String>();
+		Person.push("Seth K.");
+		Person.push("Chistelle Scharff");
 	}
 
 }
