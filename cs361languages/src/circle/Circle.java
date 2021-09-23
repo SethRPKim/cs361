@@ -4,7 +4,7 @@
 package circle;
 
 /**
- * @author Seth K. and Sam V.
+ * @author ADD YOUR NAME
  *
  */
 
@@ -60,8 +60,8 @@ public class Circle extends GraphicObject {
 	 */
 
 	public String getCircle(Circle circle) {
-		System.out.println("Circle : centerX = " +  circle.centerX + " centerY = " + circle.centerY + " radius = "
-		+ circle.radius + " .");
+		return "Circle : centerX = " +  circle.centerX + " centerY = " + circle.centerY + " radius = "
+		+ circle.radius + " .";
 	}
 
 	@Override
@@ -92,8 +92,8 @@ public class Circle extends GraphicObject {
 	 */
 
 	 @Override
-	 protected Object clone() throws CloneNotSupportedException {
-	 	return new Circle();
+	 protected Circle clone() {
+		 return new Circle();
 	 }
-
+	 
 }
