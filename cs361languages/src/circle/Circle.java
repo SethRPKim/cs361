@@ -60,7 +60,7 @@ public class Circle extends GraphicObject {
 	 */
 
 	public String getCircle(Circle circle) {
-		System.out.println("Circle : centerX = " circle.centerX + " centerY = " + circle.centerY + " radius = "
+		System.out.println("Circle : centerX = " +  circle.centerX + " centerY = " + circle.centerY + " radius = "
 		+ circle.radius + " .")''
 	}
 
@@ -81,6 +81,8 @@ public class Circle extends GraphicObject {
 		if (this.centerX == centerX && this.centerY == centerY
 				&& this.radius == radius) {
 			return super.equals(obj);
+		} else {
+			return false;
 		}
 	}
 

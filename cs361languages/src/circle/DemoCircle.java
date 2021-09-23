@@ -61,7 +61,7 @@ public class DemoCircle {
 		System.out.println(c1.toString());
 		System.out.println(c2.toString());
 
-		c3 = c1.clone();
+		Circle c3 = c1.clone();
 
 		if (c3.equals(c1)) {
 			System.out.println("c3.equals(c1) is true");
