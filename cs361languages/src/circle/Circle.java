@@ -4,7 +4,7 @@
 package circle;
 
 /**
- * @author ADD YOUR NAME
+ * @author Seth K. and Sam V.
  *
  */
 
@@ -61,7 +61,7 @@ public class Circle extends GraphicObject {
 
 	public String getCircle(Circle circle) {
 		System.out.println("Circle : centerX = " +  circle.centerX + " centerY = " + circle.centerY + " radius = "
-		+ circle.radius + " .")''
+		+ circle.radius + " .");
 	}
 
 	@Override
